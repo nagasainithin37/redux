@@ -6,7 +6,8 @@
 
 reactredux only used in index.js and in useSelector
 cmd:
-npm i @reducjs/toolkit react-redux
+
+npm i @reduxjs/toolkit react-redux
 
 ## STEP 2 :
 
