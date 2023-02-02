@@ -37,20 +37,20 @@ export const store=configureStore({})
 
 use createSlice from @reduxjs/toolkit
 
-import {createSlice} from '@reduxjs/toolkit'
+    import {createSlice} from '@reduxjs/toolkit'
 
-export const todoSlice=createSlice({})
+    export const todoSlice=createSlice({})
 
 #### A slice contains name,initialState, reducers
 
-in todoSlice.js
+    in todoSlice.js
 
-import {createSlice} from '@reduxjs/toolkit'
+    import {createSlice} from '@reduxjs/toolkit'
 
-export const todoSlice=createSlice({
-name:"todos",
-initialState:[]
-})
+    export const todoSlice=createSlice({
+    name:"todos",
+    initialState:[]
+    })
 
 export default todoSlice.reducer; {Contains all information about reducer which is imported in store}
 
@@ -58,13 +58,13 @@ export default todoSlice.reducer; {Contains all information about reducer which 
 
 ### import reducer of todo
 
-import todoReducer from 'todoSlice.js'
+    import todoReducer from 'todoSlice.js'
 
-export const store=configureStore({
-reducer:{
-todos:todoReducer
-}
-})
+    export const store=configureStore({
+    reducer:{
+    todos:todoReducer
+    }
+    })
 
 # Accessing a slice
 
@@ -74,9 +74,9 @@ todos:todoReducer
 
 use useSelector hook from react-redux
 
-import {useSelector} from 'react-redux
+    import {useSelector} from 'react-redux
 
-let todo=useSelector(state=>state.todos)
+    let todo=useSelector(state=>state.todos)
 
 # modifying state of redux
 
@@ -95,13 +95,13 @@ payload:data,
 
 ### add reducer to slices
 
-createSlice({
-reducers:{
-addToDo:(state,action)=>{
-state.push(action.payload)
-}
-}
-})
+    createSlice({
+    reducers:{
+    addToDo:(state,action)=>{
+    state.push(action.payload)
+    }
+    }
+    })
 
 ## STEP 8 :
 
@@ -109,16 +109,16 @@ state.push(action.payload)
 
 in slices
 
-export const {addToDo}=todoSlice.actions
+    export const {addToDo}=todoSlice.actions
 
 ## STEP 9:
 
 ### import addToDo into js file to use and useDispatcher from react-redux
 
-import {addToDo} fromom '/todos.js'
+    import {addToDo} fromom '/todos.js'
 
-import {useDispatch} from 'react-redux'
+    import {useDispatch} from 'react-redux'
 
-let actionobj=addToDo(todoObj.newTodo)
-let dispatch=useDispatch()
-dispatch(actionObj)
+    let actionobj=addToDo(todoObj.newTodo)
+    let dispatch=useDispatch()
+    dispatch(actionObj)
