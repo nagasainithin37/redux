@@ -1,6 +1,6 @@
 
 import {useForm} from 'react-hook-form';
-import { addToDo } from '../TodoSlice';
+import { addToDo } from '../slices/TodoSlice';
 import { useDispatch } from 'react-redux';
 function Entry() {
 
