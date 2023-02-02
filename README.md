@@ -13,9 +13,9 @@ npm i @reduxjs/toolkit react-redux
 
 ### Creating a redux store using configureStore from '@reduxjs/toolkit' in store.js
 
-import {configureStore} from '@reduxjs/toolkit'
+    import {configureStore} from '@reduxjs/toolkit'
 
-export const store=configureStore({})
+    export const store=configureStore({})
 
 ## Step 3:
 
@@ -52,7 +52,9 @@ use createSlice from @reduxjs/toolkit
     initialState:[]
     })
 
-export default todoSlice.reducer; {Contains all information about reducer which is imported in store}
+    export default todoSlice.reducer;
+
+{Contains all information about reducer which is imported in store}
 
 ## STEP 5:
 
@@ -97,9 +99,9 @@ payload:data,
 
     createSlice({
     reducers:{
-    addToDo:(state,action)=>{
-    state.push(action.payload)
-    }
+      addToDo:(state,action)=>{
+              state.push(action.payload)
+              }
     }
     })
 
