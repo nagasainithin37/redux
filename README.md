@@ -10,7 +10,7 @@ npm i @reducjs/toolkit react-redux
 
 ## STEP 2 :
 
-### Creating a redux store using conf\\\\\\\\\\\\\\\ gureStore from '@reduxjs/toolkit' in store.js
+### Creating a redux store using configureStore from '@reduxjs/toolkit' in store.js
 
 import {configureStore} from '@reduxjs/toolkit'
 
