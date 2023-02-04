@@ -4,10 +4,11 @@
 
 ### Install @reduxjs/toolkit(for js) react-redux (mapping to react)
 
-reactredux only used in index.js and in useSelector
+react-redux only used in index.js for provider and in useSelector,useDispatch
+
 cmd:
 
-npm i @reduxjs/toolkit react-redux
+    npm i @reduxjs/toolkit react-redux
 
 ## STEP 2 :
 
